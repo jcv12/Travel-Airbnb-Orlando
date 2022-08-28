@@ -5,10 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Welcome</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="./istock-1048864110_preview.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Welcome to our home</h2>
+            <h3>Enjoy your stay</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque eos quas iure similique mollitia, neque facilis nobis, necessitatibus dolore ea, eligendi quaerat in tempore fuga. Tempora aperiam soluta quasi itaque!</p>
+            <a href="#">Wifi Access</a>
+        </div>
+    </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">House Rules</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Wifi Access</a></li>
+                <li><a href="#">Contact Information</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle("active")
+                showcase.classList.toggle("active")
+            })
+        </script>
 </body>
 </html>
