@@ -4,48 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="showcase">
-        <header>
-            <h2 class="logo">M</h2>
-            <div class="toggle"></div>
-        </header>
+    <header>
+        <h2><a href="#">M</a></h2>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Wifi</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
 
-        <video src="./istock-1048864110_preview.mp4" muted loop autoplay></video>
-
-        <div class="overlay"></div>
-
-        <div class="text">
-            <h2>Welcome to our home</h2>
-            <h3>Enjoy your stay</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque eos quas iure similique mollitia, neque facilis nobis, necessitatibus dolore ea, eligendi quaerat in tempore fuga. Tempora aperiam soluta quasi itaque!</p>
-            <a href="#">Wifi Access</a>
-        </div>
+    <section class="box">
+        <video src="./pexels-tima-miroshnichenko-6010489.mp4" autoplay muted loop></video>
+        <h1>Welcome</h1>
+        <h3>Enjoy your stay with us</h3>
+        <a href="#" class="boxBtn">Wifi Access</a>
     </section>
-
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">House Rules</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Wifi Access</a></li>
-                <li><a href="#">Contact Information</a></li>
-            </ul>
-        </div>
-        <script>
-            const menuToggle = document.querySelector('.toggle')
-            const showcase = document.querySelector('.showcase')
-
-            menuToggle.addEventListener('click', () => {
-                menuToggle.classList.toggle("active")
-                showcase.classList.toggle("active")
-            })
-        </script>
+    
 </body>
 </html>
